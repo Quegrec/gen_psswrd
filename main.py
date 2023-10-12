@@ -69,12 +69,18 @@ class MainWindow(QMainWindow):
 
         self.options_size.valueChanged.connect(self.change_size)
 
+        self.generate()
+
+        self.setStatusBar(QStatusBar(self))
+        self.status = self.statusBar()
+
     def quit(self):
         QApplication.quit()
 
     def copy(self):
         clipboard = QApplication.clipboard()
         clipboard.setText(self.password_generated.text())
+        self.status.showMessage("Mot de passe copié", 1000)
 
     def generate(self):
         size = self.options_size.value()
