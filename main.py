@@ -28,7 +28,7 @@ class MainWindow(QMainWindow):
         button_layout = QHBoxLayout()
 
         main_layout.addLayout(option_layout)
-        main_layout.addWidget(self.password_generated )
+        main_layout.addWidget(self.password_generated)
         main_layout.addLayout(button_layout)
 
         btn_quit = QPushButton("Quitter", self)
