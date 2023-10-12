@@ -1,2 +1,2 @@
 # gen_psswrd
- Générateur de mot de passe
+ Gérérateur de mot de passe
